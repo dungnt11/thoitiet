@@ -1,1 +1,47 @@
-@import 'config'
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-global;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  color: white;
+}
+
+.location {
+  #muigio {
+    font-size: $h1;
+  }
+
+  display: flex;
+  justify-content: space-around;
+  width: 30vh;
+  align-items: center;
+  p {
+    font-size: $span;
+  }
+}
+
+.trangthai {
+  margin-top: 3rem;
+  .nhietdo {
+    font-size: $h1;
+    user-select: none;
+    cursor: pointer;
+  }
+  .mieuta {
+    font-size: $h3;
+  }
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
