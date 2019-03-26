@@ -63,6 +63,7 @@ body {
     font-size: 30px; }
 
 .dubao {
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,3 +94,18 @@ body {
       transform: translate(2px, 2px); }
   .dubao _b p {
     font-size: 15px; }
+
+img#loading {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  z-index: 2; }
+
+.mo {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: #000027;
+  top: 0;
+  left: 0; }

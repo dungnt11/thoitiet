@@ -106,12 +106,12 @@
         return `<div class="feature">
         <div id="_a">
           <div class="_b">
-            <p>Min temperature: ${
-              coverNhietDo(e.temperatureMin, false).toFixed(2)
-            } <span>&#186;</span><span class="_donvi">C</span></p>
-            <p>Max temperature: ${
-              coverNhietDo(e.temperatureMax, false).toFixed(2)
-            } <span>&#186;</span> <span class="_donvi">C</span></p>
+            <p>Min temperature: ${coverNhietDo(e.temperatureMin, false).toFixed(
+              2
+            )} <span>&#186;</span><span class="_donvi">C</span></p>
+            <p>Max temperature: ${coverNhietDo(e.temperatureMax, false).toFixed(
+              2
+            )} <span>&#186;</span> <span class="_donvi">C</span></p>
             <canvas id="_icon${i}" width="128" height="128"></canvas>
           </div>
           <div class="_mieuta">${e.summary}</div>
@@ -120,10 +120,14 @@
       </div>`;
       });
       const div = document.querySelector(".dubao");
-      div.innerHTML = dataNhiet.join('')
+      div.innerHTML = dataNhiet.join("");
       daily.data.map((e, i) => {
         setIcon(e.icon, document.querySelector("#_icon" + i));
       });
+
+      // hide loading
+      document.querySelector("#loading").style.display = "none";
+      document.querySelector(".mo").style.display = "none";
     } catch (err) {
       console.error(err);
     }
