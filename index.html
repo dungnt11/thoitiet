@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="location">
-    <h1 id="muigio">Múi giờ</h1>
-    <canvas id="iconWeather" width="128" height="128"></canvas>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="location">
+      <h1 id="muigio">Múi giờ</h1>
+      <canvas id="iconWeather" width="128" height="128"></canvas>
+    </div>
 
-  <div class="trangthai">
-    <div class="nhietdo"><span id="do"></span><span>&#186;</span> <span class="donvi">F</span></div>
-    <div class="mieuta"></div>
-  </div>
-  <div class="tonigh">
+    <!-- dự báo trong ngày -->
+    <div class="trangthai">
+      <div class="nhietdo">
+        <span id="do"></span><span>&#186;</span> <span class="donvi">F</span>
+      </div>
+      <div class="mieuta"></div>
+    </div>
+    <!-- dự báo trong ngày -->
+    <div class="dubao"></div>
+    <!-- trong thời gian tới -->
     
-  </div>
-</body>
-<script src="./javascript/skycons.js"></script>
-<script src="javascript/app.js">
-</script>
+
+  </body>
+  <script src="./javascript/skycons.js"></script>
+  <script src="javascript/app.js"></script>
 </html>

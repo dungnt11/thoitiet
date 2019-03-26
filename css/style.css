@@ -24,7 +24,8 @@ body {
   background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
   background-image: -o-linear-gradient(left, #fa709a 0%, #fee140 100%);
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-  color: white; }
+  color: white;
+  margin: 0 25px; }
 
 .location {
   display: -webkit-box;
@@ -60,3 +61,35 @@ body {
     cursor: pointer; }
   .trangthai .mieuta {
     font-size: 30px; }
+
+.dubao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .dubao .feature {
+    margin: 10px 10px;
+    border-radius: 15px;
+    padding: 58px 11px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .dubao .feature:hover {
+      -webkit-box-shadow: 0.2px 1.2px 2.8px #000027;
+      box-shadow: 0.2px 1.2px 2.8px #000027;
+      -webkit-transform: translate(2px, 2px);
+      -ms-transform: translate(2px, 2px);
+      transform: translate(2px, 2px); }
+  .dubao _b p {
+    font-size: 15px; }

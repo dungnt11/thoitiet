@@ -1,4 +1,4 @@
-@import 'config';
+@import "config";
 
 * {
   margin: 0;
@@ -15,6 +15,7 @@ body {
   align-items: center;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   color: white;
+  margin: 0 25px;
 }
 
 .location {
@@ -44,4 +45,28 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
+}
+
+.dubao {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .feature {
+    margin: 10px 10px;
+    border-radius: 15px;
+    padding: 58px 11px;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0.2px 1.2px 2.8px #000027;
+      transform: translate(2px, 2px);
+    }
+  }
+  _b {
+    p {
+      font-size: $span;
+    }
+  }
 }
